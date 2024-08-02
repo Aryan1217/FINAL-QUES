@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Coding Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Coding Competition</h1>
+        <button id="startBtn" class="start-button">Start Competition</button>
+    </div>
+
+    <script>
+        document.getElementById('startBtn').addEventListener('click', function() {
+            // Store the start time only if it's not already set
+            if (!localStorage.getItem('startTime')) {
+                localStorage.setItem('startTime', new Date().getTime());
+            }
+            // Redirect to the questions page
+            window.location.href = 'questions.html';
+        });
+    </script>
+</body>
+</html>

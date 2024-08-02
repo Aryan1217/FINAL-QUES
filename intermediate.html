@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Coding Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intermediate Questions</h1>
+        <div class="timer" id="timer"></div>
+
+        <div class="question-container">
+            <div class="question">
+                1. ABBREVIATOR - <br>
+                Given an array of n distinct non-empty strings, generate abbreviations for each word following these simplified rules: <br>
+                Basic Abbreviation: Begin with the first character and then add the number of characters abbreviated (i.e., the count of characters between the first and last character), followed by the last character. <br>
+                Uniqueness: Ensure that the abbreviation for each word is unique within the list. If any abbreviations conflict (i.e., more than one word shares the same abbreviation), use the original word instead of the abbreviation. <br>
+                Shortening Condition: If the abbreviation does not make the word shorter, then keep the original word. <br>
+                <strong>Example:</strong> <br>
+                Input: <code>["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]</code> <br>
+                Output: <code>["l2e", "god", "internal", "me", "i6t", "interval", "intension", "f2e", "intrusion"]</code>
+            </div>
+            <div class="question">
+                2. DUNGEONN - <br>
+                The demons had captured the princess (P) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (K) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess. <br>
+                The knight has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately. <br>
+                Some of the rooms are guarded by demons, so the knight loses health (negative integers) upon entering these rooms; other rooms are either empty (0's) or contain magic orbs that increase the knight's health (positive integers). <br>
+                In order to reach the princess as quickly as possible, the knight decides to move only rightward or downward in each step. <br>
+                <strong>Example:</strong> <br>
+                Given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path RIGHT-> RIGHT -> DOWN -> DOWN.
+            </div>
+            <div class="question">
+                3. Reverse Pairs - <br>
+                Given an integer array <code>nums</code>, return the number of reverse pairs in the array. <br>
+                A reverse pair is a pair (i, j) where: <br>
+                0 <= i < j < nums.length and <br>
+                <code>nums[i] > 2 * nums[j]</code>. <br>
+                <strong>Example 1:</strong> <br>
+                Input: <code>[1,3,2,3,1]</code> <br>
+                Output: <code>2</code> <br>
+                <strong>Example 2:</strong> <br>
+                Input: <code>[2,4,3,5,1]</code> <br>
+                Output: <code>3</code>
+            </div>
+        </div>
+
+        <button id="backBtn" class="button back-button">Back</button>
+        <button id="nextBtn" class="button next-button">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
